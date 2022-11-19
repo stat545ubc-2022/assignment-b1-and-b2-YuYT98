@@ -13,3 +13,7 @@ test_that("Testing maeFormula function returns error when the number of inputs a
 test_that("Testing maeFormula function returns error when the type of inputs are incorrect", {
   expect_error(maeFormula(predicted_list_1,c(2,3)))
 })
+
+rm('predicted_list_1')
+rm('actual_list_1')
+rm('actual_list_2')
